@@ -6,7 +6,13 @@ FROM nginx:latest
 WORKDIR /usr/share/nginx/html/
 COPY /dist/nttdata .
 
+<<<<<<< HEAD
 EXPOSE 9000
+||||||| f39854c
+EXPOSE 8080
+=======
+EXPOSE 1221
+>>>>>>> deployment-local/deployment-local
 
 STOPSIGNAL SIGTERM
 CMD ["nginx", "-g", "daemon off;"]
